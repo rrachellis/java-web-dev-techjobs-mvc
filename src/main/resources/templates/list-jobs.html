@@ -16,6 +16,8 @@
     <th:block class="job-listing" th:each = "result : ${jobs}">
         <tr>
             <td>
+                <p th:text = "'Id: ' + ${result.id}"></p>
+                <p th:text = "'Name: ' + ${result.name}"></p>
             <p th:text = "'Employer: ' + ${result.employer}"></p>
             <p th:text = "'Location: ' + ${result.location}"></p>
             <p th:text = "'Position Type: ' + ${result.positionType}"></p>
